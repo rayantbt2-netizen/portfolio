@@ -1,13 +1,108 @@
 body {
+    margin: 0;
     font-family: Arial;
-    background-color: #f4f4f4;
+    background: #0b1220;
+    color: white;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+.container {
+    animation: fadeIn 1s ease-in;
+}
+
+.avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 3px solid #3b82f6;
+    margin-bottom: 20px;
+}
+
+/* TITRES */
+h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+p {
+    color: #cbd5e1;
+}
+
+/* BOUTONS */
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #3b82f6;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.buttons a:hover {
+    transform: scale(1.1);
+    background: #2563eb;
+}
+
+/* ABOUT */
+.about {
+    padding: 60px;
     text-align: center;
 }
 
-h1 {
-    color: blue;
+/* PROJETS */
+.projects {
+    padding: 60px;
+    text-align: center;
 }
 
-h2 {
-    color: darkred;
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #111827;
+    padding: 20px;
+    width: 250px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #3b82f6;
+}
+
+/* CONTACT */
+.contact {
+    padding: 60px;
+    text-align: center;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
 }
