@@ -1,0 +1,46 @@
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+
+
+
+    table {
+        width: 50%;
+        margin: 20px auto;
+        border-collapse: collapse;
+    }
+    
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    th, td {
+        border: 2px solid black; 
+        padding: 10px;
+        text-align: center;
+    }
+    
+    thead {
+        background-color: #f4f4f4;
+    }
+    
+    tbody tr:hover {
+        background-color: #e0e0e0; 
+    }
+    
+    th {
+        background-color: #333;
+        color: white;
+    }
+    
+    td {
+        font-size: 1.2em;
+    }
+    
+    
+    table {
+        border: 2px solid black;
+

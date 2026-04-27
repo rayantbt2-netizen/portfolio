@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script language="javascript">
+        var val = 50;
+        var incr = 1; // Corrigé de "l" à "1"
+
+        function incrementer(signe) {
+            val = val + signe * incr;
+            document.getElementById("zoneTexte").value = val; // Remplacé "-" par "="
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td align="center">
+                <input type="button" value="-" onClick="incrementer(-1)">
+            </td>
+            <td rowspan="3">
+                <input type="radio" name="radiobutton" onClick="incr=5">5<br>
+                <input type="radio" name="radiobutton" onClick="incr=2">2<br>
+                <input type="radio" name="radiobutton" checked onClick="incr=1">1
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <input type="text" id="zoneTexte" value="50" readonly size="4" 
+                       style="border:none; text-align:center; font-size:16px; font-weight:bold">
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <input type="button" value="+" onClick="incrementer(+1)">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

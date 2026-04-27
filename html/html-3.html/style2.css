@@ -1,0 +1,53 @@
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+
+
+    #main-container {
+        width: 80%; 
+        margin: 0 auto; 
+        padding: 20px; 
+
+        background-color: #f9f9f9; 
+    }
+
+    .logo {
+        display: block;
+        margin: 0 auto;
+    }
+    
+
+    .main-title {
+        text-align: center;
+        color: #333;
+        font-size: 2em;
+    }
+    
+
+    .content-section {
+        margin: 20px 0; 
+        padding: 15px; 
+        border: 1px solid #ddd; 
+    }
+    
+    
+    .day {
+        font-weight: bold; 
+        color: #555; 
+    }
+    
+  /
+    .nav-link {
+        display: inline-block;
+        margin: 10px; 
+        padding: 10px 15px;
+        text-decoration: none; 
+        background-color: #333; 
+        color: white; 
+    }
+    
+ 
+    .nav-link:hover {
+        background-color: #444; 
+    }

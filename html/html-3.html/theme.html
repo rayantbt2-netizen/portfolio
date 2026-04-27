@@ -1,0 +1,250 @@
+<h2>Page à Thème</h2>
+<link rel="stylesheet" href="style2.css"> 
+<link rel="stylesheet" href="css/bootstrap.css"> 
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+
+
+<nav>
+<ul>
+    <li><a href="theme.html">Thème</a></li>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="tarifs.html">Tarifs</a></li>
+    <li><a href="jeux.html">jeux</a></li>
+    
+</ul>
+</nav>
+<body>
+<style>
+    h2 {
+        color: white; 
+        font-weight: bold;
+        text-align: center; 
+    }
+body {
+        background-image: url("anasser.png"); 
+        
+    }
+ 
+    
+
+p {
+        color: white; 
+    }
+
+fieldset {
+        background-color: rgb(255, 255, 255, 0.8);
+ ; 
+ 
+}
+
+legend {
+
+    color: #333; 
+}
+
+label {
+    color: #333; 
+}
+    .container {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+  
+}
+fieldset {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+body {
+            background-image: url("anasser.png");
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+    
+
+        p {
+            color: white;
+        }
+
+        fieldset {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 2px solid #333;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        legend {
+            color: #007bff;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        label {
+            color: #333;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+      
+        .devinette-container {
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.9); 
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .devinette-legend {
+            color: #007bff;
+        }
+
+        .devinette-instructions {
+            color: #333;
+            font-size: 1.1rem;
+        }
+
+        .devinette-buttons input {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff; 
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .devinette-buttons input:hover {
+            background-color: #0056b3;
+        }
+
+        #text {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 1rem;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            text-align: center;
+            background-color: white;
+            color: #333;
+        }
+
+        input[type="button"] {
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            background-color: #28a745; 
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="button"]:hover {
+            background-color: #218838;
+        }
+
+
+</style>
+</head>
+<body>
+
+
+
+
+
+
+      <div class="container mt-4">
+         <div class="row">
+                <div class="col-12 col-md-6 mb-4">
+            <p>
+    Bienvenue dans notre bar, Chez Minou !Chez Minou est un endroit qui a été créé pour offrir aux chats âgés un coin tranquille où ils peuvent se reposer. Ce lieu simple et chaleureux accueille les visiteurs qui souhaitent boire un thé ou un café tout en profitant de la présence apaisante des chats. Ici, les chats vivent leur meilleure vie, entourés de douceur et d’attention.
+Adjectifs qui qualifient le bar : détendu, chaleureux, calme, simple, cosy.
+C’est un endroit parfait pour prendre un moment de repos, en compagnie de chats tranquilles et heureux. </p>
+        </div>
+<div class=""></div>
+
+
+
+    <div class="col-12 col-md-6 mb-4">
+        <fieldset class="p-3">
+<fieldset>
+     <p> <legend>Quelle boisson accompagne le mieux une séance avec les chats ?</legend> </p>
+
+ 
+        <label for="the_vert">Thé vert</label>
+        <input type="radio" id="the_vert"  value="the_vert"><br>
+
+        <label for="cafe_latte">Café latte</label>
+        <input type="radio" id="cafe_latte"  value="cafe_latte"><br>
+
+        <label for="Capuccino">capuccino</label>
+        <input type="radio" id="cappucino"  value="cappucino"><br>
+    </fieldset>
+
+
+
+
+
+    
+    <div class="container devinette-container">
+        <fieldset>
+            <legend class="devinette-legend">Devinette : Trouve la phrase magique !</legend>
+            <p class="devinette-instructions">
+                Clique sur les mots dans le bon ordre pour deviner : "Les chats aiment le café."
+            </p>
+            <div class="devinette-buttons">
+                <input type="button" id="btn1" onClick="ajouter(this)" value="chats">
+                <input type="button" id="btn2" onClick="ajouter(this)" value="aiment">
+                <input type="button" id="btn3" onClick="ajouter(this)" value="le">
+                <input type="button" id="btn4" onClick="ajouter(this)" value="café">
+                <input type="button" id="btn5" onClick="ajouter(this)" value="Les">
+            </div>
+            <br>
+            <input type="text" id="text" size="60" readonly>
+            <br><br>
+            <input type="button" value="Recommencer" onClick="raz()">
+        </fieldset>
+    </div>
+
+    <script>
+        function ajouter(objet) {
+            document.getElementById("text").value += objet.value + " ";
+            objet.disabled = true; 
+            verifier();
+        }
+
+        function verifier() {
+            const phrase = document.getElementById("text").value.trim();
+            if (phrase === "Les chats aiment le café") {
+                alert("Bravo ! Vous avez trouvé la phrase magique !");
+            }
+        }
+
+        function raz() {
+            document.getElementById("text").value = ""; 
+            const boutons = document.querySelectorAll('.devinette-buttons input[type="button"]');
+            boutons.forEach(bouton => {
+                bouton.disabled = false; 
+            });
+        }
+    </script>-
+
+
+</div>
+</div>
+</div>
+
+</html>
+<a href="tarifs.html">page tarifs </a>
+</main>
