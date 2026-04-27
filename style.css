@@ -1,9 +1,8 @@
 body {
-  body {
     margin: 0;
     font-family: Arial;
     background: #0b1220;
-    color: white;
+    color: #e2e8f0;
     text-align: center;
 }
 
@@ -22,15 +21,16 @@ body {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 42px;
     margin: 10px 0;
+    color: white;
 }
 
-p {
-    color: #cbd5e1;
+.subtitle {
+    color: #94a3b8;
 }
 
-/* BOUTONS */
+/* BUTTONS */
 .buttons {
     margin-top: 20px;
 }
@@ -51,16 +51,21 @@ p {
     background: #2563eb;
 }
 
-/* ABOUT */
-.about {
-    padding: 50px;
+/* SECTIONS */
+section {
+    padding: 50px 20px;
 }
 
-/* PROJETS */
-.projects {
-    padding: 50px;
+/* SKILLS */
+.skills-list span {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 12px;
+    background: #1e293b;
+    border-radius: 6px;
 }
 
+/* PROJECTS */
 .grid {
     display: flex;
     flex-wrap: wrap;
@@ -87,7 +92,12 @@ p {
     text-decoration: none;
 }
 
+/* STAGE */
+.stage {
+    background: #0f172a;
+}
+
 /* CONTACT */
 .contact {
-    padding: 50px;
+    background: #111827;
 }
