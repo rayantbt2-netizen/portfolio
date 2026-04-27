@@ -1,26 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <title>Mon Portfolio</title>
+    <meta charset="UTF-8">
+    <title>Portfolio Jonathan</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Jonathan Privat</h1>
-<p>Étudiant en BTS SIO</p>
+<header>
+    <h1>Jonathan Privat</h1>
+    <p>Étudiant BTS SIO | Développeur</p>
 
-<h2>Mes compétences</h2>
-<ul>
-    <li>Python</li>
-    <li>Linux</li>
-    <li>Réseau</li>
-</ul>
+    <img src="photo.jpg" alt="Ma photo" class="photo">
 
-<h2>Mes projets</h2>
-<p>Stage fibre optique</p>
+    <div class="buttons">
+        <a href="#projets">Mes Projets</a>
+        <a href="#contact">Contact</a>
+        <a href="cv.pdf" download>Télécharger CV</a>
+    </div>
+</header>
 
-<h2>Contact</h2>
-<p>Email : tonmail@gmail.com</p>
+<section id="about">
+    <h2>À propos</h2>
+    <p>Je suis étudiant en BTS SIO passionné par le développement web, les réseaux et Linux.</p>
+</section>
+
+<section id="skills">
+    <h2>Compétences</h2>
+    <ul>
+        <li>Python</li>
+        <li>Linux</li>
+        <li>HTML / CSS</li>
+        <li>Réseau</li>
+    </ul>
+</section>
+
+<section id="projets">
+    <h2>Mes projets</h2>
+
+    <div class="card">
+        <h3>Projet Base de Données</h3>
+        <p>Compte rendu SQL</p>
+        <a href="projets/bd_tabate.pdf" target="_blank">Voir</a>
+    </div>
+
+    <div class="card">
+        <h3>Projet HTML</h3>
+        <p>Site web simple</p>
+        <a href="projets/html_projet.html" target="_blank">Voir</a>
+    </div>
+
+    <div class="card">
+        <h3>Projet Réseau</h3>
+        <p>Configuration Linux</p>
+        <a href="projets/reseau.pdf" target="_blank">Voir</a>
+    </div>
+
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email : tonmail@gmail.com</p>
+</section>
 
 </body>
+</html>
 </html>
