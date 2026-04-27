@@ -7,58 +7,58 @@
 </head>
 <body>
 
-<header>
-    <h1>Jonathan Privat</h1>
-    <p>Étudiant BTS SIO | Développeur</p>
+<header class="hero">
+    <div class="container">
 
-    <img src="photo.jpg" alt="Ma photo" class="photo">
+        <img src="photo.jpg" class="avatar">
 
-    <div class="buttons">
-        <a href="#projets">Mes Projets</a>
-        <a href="#contact">Contact</a>
-        <a href="cv.pdf" download>Télécharger CV</a>
+        <h1>Jonathan Privat</h1>
+        <p>Étudiant BTS SIO | Développeur Web & Réseaux</p>
+
+        <div class="buttons">
+            <a href="#projets">Mes Projets</a>
+            <a href="#contact">Contact</a>
+            <a href="cv.pdf" download>CV</a>
+        </div>
+
     </div>
 </header>
 
-<section id="about">
+<section class="about">
     <h2>À propos</h2>
-    <p>Je suis étudiant en BTS SIO passionné par le développement web, les réseaux et Linux.</p>
+    <p>
+        Passionné par le développement web, les réseaux et Linux.
+        Je construis des projets simples, propres et efficaces.
+    </p>
 </section>
 
-<section id="skills">
-    <h2>Compétences</h2>
-    <ul>
-        <li>Python</li>
-        <li>Linux</li>
-        <li>HTML / CSS</li>
-        <li>Réseau</li>
-    </ul>
-</section>
-
-<section id="projets">
+<section id="projets" class="projects">
     <h2>Mes projets</h2>
 
-    <div class="card">
-        <h3>Projet Base de Données</h3>
-        <p>Compte rendu SQL</p>
-        <a href="projets/bd_tabate.pdf" target="_blank">Voir</a>
-    </div>
+    <div class="grid">
 
-    <div class="card">
-        <h3>Projet HTML</h3>
-        <p>Site web simple</p>
-        <a href="projets/html_projet.html" target="_blank">Voir</a>
-    </div>
+        <div class="card">
+            <h3>Base de données</h3>
+            <p>Projet SQL & compte rendu</p>
+            <a href="projets/bd.pdf">Voir</a>
+        </div>
 
-    <div class="card">
-        <h3>Projet Réseau</h3>
-        <p>Configuration Linux</p>
-        <a href="projets/reseau.pdf" target="_blank">Voir</a>
-    </div>
+        <div class="card">
+            <h3>Site HTML</h3>
+            <p>Premier site web</p>
+            <a href="projets/html.html">Voir</a>
+        </div>
 
+        <div class="card">
+            <h3>Réseau Linux</h3>
+            <p>Configuration serveur</p>
+            <a href="projets/reseau.pdf">Voir</a>
+        </div>
+
+    </div>
 </section>
 
-<section id="contact">
+<section id="contact" class="contact">
     <h2>Contact</h2>
     <p>Email : tonmail@gmail.com</p>
 </section>
