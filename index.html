@@ -1,101 +1,83 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio BTS SIO - Jonathan</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Jonathan Privat</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
 
-<header class="hero">
+<header class="nav">
+  <h1>Jonathan</h1>
 
-    <img src="photo.jpg" class="avatar" alt="photo">
-
-    <h1>Jonathan Privat</h1>
-
-    <p class="subtitle">
-        BTS SIO — Développement Web • Réseaux • Systèmes
-    </p>
-
-    <nav class="nav">
-        <a href="#about">À propos</a>
-        <a href="#projets">Projets</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
+  <ul>
+    <li><a href="#about">À propos</a></li>
+    <li><a href="#skills">Compétences</a></li>
+    <li><a href="#projects">Projets</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 </header>
 
-<section id="about" class="section">
-
-    <h2>À propos</h2>
-
-    <p>
-        Étudiant en BTS SIO, je travaille dans le développement web, les systèmes et les réseaux.
-        J’ai réalisé plusieurs projets académiques ainsi qu’un stage en fibre optique.
-    </p>
-
+<!-- HERO -->
+<section class="hero">
+  <h2>Étudiant BTS SIO</h2>
+  <p>Développeur Web • Cybersécurité • Passionné IT</p>
+  <a href="#projects" class="btn">Voir mes projets</a>
 </section>
 
-<!-- PROJETS -->
-<section id="projets" class="projects">
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>À propos</h2>
+  <p>
+    Je m'appelle Jonathan Privat, étudiant en BTS SIO.
+    Je développe des sites web et j’aime apprendre les technologies web et système.
+  </p>
+</section>
 
-    <h2>Mes projets</h2>
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <h2>Compétences</h2>
 
-    <div class="grid">
+  <div class="grid">
+    <div class="card">HTML / CSS</div>
+    <div class="card">JavaScript</div>
+    <div class="card">PHP</div>
+    <div class="card">Python</div>
+    <div class="card">Linux</div>
+    <div class="card">SQL</div>
+  </div>
+</section>
 
-        <div class="card">
-            <h3>Site Web</h3>
-            <p>Projet développement web</p>
-            <a href="site web/site-1.html.odt">Voir 1</a>
-            <a href="site web/site-2.html.odt">Voir 2</a>
-        </div>
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2>Projets</h2>
 
-        <div class="card">
-            <h3>GLPI</h3>
-            <p>Gestion de tickets</p>
-            <a href="glpi/glpi-1.pdf">Voir</a>
-        </div>
+  <div class="grid">
 
-        <div class="card">
-            <h3>PrestaShop</h3>
-            <p>Projet e-commerce</p>
-            <a href="prestashop/presta-1.pdf.odt">Voir</a>
-        </div>
-
-        <div class="card">
-            <h3>Veille Technologique</h3>
-            <p>Analyse IT</p>
-            <a href="veille/veille-1.pdf.pdf">Voir</a>
-        </div>
-
-        <div class="card">
-            <h3>SEO</h3>
-            <p>Référencement web</p>
-            <a href="seo/seo-1.pdf.docx">Voir 1</a>
-            <a href="seo/seo-2.pdf.odt">Voir 2</a>
-        </div>
-
-        <div class="card">
-            <h3>HTML</h3>
-            <p>Apprentissage HTML</p>
-            <a href="html/html-1.html.odt">Voir 1</a>
-            <a href="html/html-2.html.odt">Voir 2</a>
-            <a href="html/html-3.html.odt">Voir 3</a>
-        </div>
-
+    <div class="card project">
+      <h3>Site Prestashop</h3>
+      <p>Boutique en ligne sport</p>
     </div>
 
+    <div class="card project">
+      <h3>TP Linux</h3>
+      <p>Gestion utilisateurs / droits</p>
+    </div>
+
+  </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="section">
-
-    <h2>Contact</h2>
-    <p>Email : tonmail@gmail.com</p>
-
+  <h2>Contact</h2>
+  <p>Email : jonathan@email.com</p>
 </section>
+
+<footer>
+  <p>© 2026 Jonathan Privat</p>
+</footer>
 
 </body>
 </html>
