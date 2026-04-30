@@ -2,12 +2,14 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio BTS SIO - Jonathan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Jonathan Privat</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- HERO -->
 <header class="hero">
 
     <img src="photo.jpg" class="avatar" alt="Photo">
@@ -15,25 +17,48 @@
     <h1>Jonathan Privat</h1>
 
     <p class="subtitle">
-        Étudiant BTS SIO | Développement Web & Systèmes
+        Étudiant BTS SIO | Développement Web | Réseaux | Systèmes
     </p>
 
     <div class="buttons">
         <a href="cv.pdf" download>📄 CV</a>
+        <a href="#about">👤 À propos</a>
         <a href="#projets">📁 Projets</a>
         <a href="#contact">📧 Contact</a>
     </div>
 
 </header>
 
-<section class="about">
+<!-- ABOUT -->
+<section id="about" class="about">
 
     <h2>À propos</h2>
 
     <p>
-        Étudiant en BTS SIO passionné par le développement web,
-        la cybersécurité, les réseaux et les systèmes informatiques.
+        Étudiant en BTS SIO, je me spécialise dans le développement web,
+        les systèmes informatiques et les réseaux.  
+        J’ai réalisé plusieurs projets académiques ainsi qu’un stage en fibre optique
+        qui m’a permis de comprendre le fonctionnement des infrastructures réseau.
     </p>
+
+</section>
+
+<!-- COMPÉTENCES -->
+<section class="skills">
+
+    <h2>Compétences</h2>
+
+    <div class="skills-list">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>PHP</span>
+        <span>Python</span>
+        <span>SQL</span>
+        <span>Linux</span>
+        <span>Réseaux</span>
+        <span>GLPI</span>
+        <span>PrestaShop</span>
+    </div>
 
 </section>
 
@@ -45,43 +70,64 @@
     <div class="grid">
 
         <div class="card">
-            <h3>Site Web</h3>
-            <p>Projet développement web</p>
-            <a href="site web/site-1.html.odt">Voir 1</a>
-            <a href="site web/site-2.html.odt">Voir 2</a>
-        </div>
-
-        <div class="card">
-            <h3>GLPI</h3>
-            <p>Gestion de tickets</p>
-            <a href="glpi/glpi-1.pdf">Voir</a>
+            <h3>GLPI - Support IT</h3>
+            <p>
+                Mise en place d’un système de gestion de tickets pour simuler un support informatique.
+            </p>
+            <div class="tags">
+                <span>Linux</span>
+                <span>Réseaux</span>
+                <span>GLPI</span>
+            </div>
+            <a href="glpi/">📁 Voir projet</a>
         </div>
 
         <div class="card">
             <h3>PrestaShop</h3>
-            <p>Projet e-commerce</p>
-            <a href="prestashop/presta-1.pdf.odt">Voir</a>
+            <p>
+                Création d’un site e-commerce pour comprendre la gestion de boutique en ligne.
+            </p>
+            <div class="tags">
+                <span>E-commerce</span>
+                <span>CMS</span>
+            </div>
+            <a href="prestashop/">📁 Voir projet</a>
         </div>
 
         <div class="card">
-            <h3>Veille Technologique</h3>
-            <p>Analyse IT</p>
-            <a href="veille/veille-1.pdf.pdf">Voir</a>
+            <h3>Site Web</h3>
+            <p>
+                Création de pages web en HTML/CSS pour apprendre le développement front-end.
+            </p>
+            <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+            <a href="site-web/">📁 Voir projet</a>
         </div>
 
         <div class="card">
             <h3>SEO</h3>
-            <p>Référencement web</p>
-            <a href="seo/seo-1.pdf.docx">Voir 1</a>
-            <a href="seo/seo-2.pdf.odt">Voir 2</a>
+            <p>
+                Analyse et optimisation du référencement naturel d’un site web.
+            </p>
+            <div class="tags">
+                <span>SEO</span>
+                <span>Analyse</span>
+            </div>
+            <a href="seo/">📁 Voir projet</a>
         </div>
 
         <div class="card">
-            <h3>HTML</h3>
-            <p>Apprentissage HTML</p>
-            <a href="html/html-1.html.odt">Voir 1</a>
-            <a href="html/html-2.html.odt">Voir 2</a>
-            <a href="html/html-3.html.odt">Voir 3</a>
+            <h3>Veille Technologique</h3>
+            <p>
+                Analyse des nouvelles technologies et tendances IT.
+            </p>
+            <div class="tags">
+                <span>IT</span>
+                <span>Recherche</span>
+            </div>
+            <a href="veille/">📁 Voir projet</a>
         </div>
 
     </div>
@@ -92,7 +138,13 @@
 <section id="contact" class="contact">
 
     <h2>Contact</h2>
+
     <p>Email : tonmail@gmail.com</p>
+
+    <div class="buttons">
+        <a href="https://github.com/">GitHub</a>
+        <a href="https://linkedin.com/">LinkedIn</a>
+    </div>
 
 </section>
 
