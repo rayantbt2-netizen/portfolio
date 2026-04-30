@@ -1,146 +1,148 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio - Rayan Tabate</title>
-  <link rel="stylesheet" href="style.css"/>
-</head>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
 
-<body>
+body {
+  background: #050816;
+  color: white;
+  overflow-x: hidden;
+}
 
-<header class="nav">
-  <h1>Rayan Tabate</h1>
+/* BACKGROUND LUMINEUX */
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at top, #1e3a8a, transparent 60%),
+              radial-gradient(circle at bottom, #0ea5e9, transparent 60%);
+  opacity: 0.25;
+  z-index: -1;
+}
 
-  <ul>
-    <li><a href="#about">Profil</a></li>
-    <li><a href="#projects">Projets</a></li>
-    <li><a href="#stage">Stage</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</header>
+/* NAV */
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(10,10,20,0.8);
+  backdrop-filter: blur(10px);
+}
 
-<!-- HERO -->
-<section class="hero">
+.nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
 
-  <div class="glass">
+.nav a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
 
-    <img src="photo.jpg" class="avatar" alt="photo">
+.nav a:hover {
+  color: #38bdf8;
+}
 
-    <h1 class="title"></h1>
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    <p class="subtitle">
-      Étudiant BTS SIO SLAM<br>
-      Passionné développement informatique
-    </p>
+.hero-box {
+  text-align: center;
+  padding: 40px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.1);
+  width: 420px;
+}
 
-    <div class="badges">
-      <span>📍 Toulouse</span>
-      <span>🎓 BTS SIO SLAM</span>
-      <span>💻 Développement</span>
-    </div>
+/* PHOTO */
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #38bdf8;
+  margin-bottom: 10px;
+}
 
-  </div>
+/* TITLE JS */
+.title {
+  font-size: 26px;
+  color: #38bdf8;
+  min-height: 30px;
+}
 
-</section>
+/* TAGS */
+.tags {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
 
-<!-- ABOUT -->
-<section id="about" class="section">
+.tags span {
+  font-size: 12px;
+  background: rgba(56,189,248,0.15);
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: #38bdf8;
+}
 
-  <h2>À propos</h2>
+/* SECTIONS */
+.section {
+  padding: 100px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
 
-  <div class="card">
+/* CARDS */
+.card {
+  background: #0b1220;
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+  margin-top: 20px;
+}
 
-    <p>
-      Je m'appelle <strong>Rayan Tabate</strong>, étudiant en BTS SIO option SLAM.
-      <br><br>
+.card h3 {
+  color: #38bdf8;
+}
 
-      Passionné par le développement web et logiciel, je cherche à progresser dans la programmation et l’ingénierie logicielle.
-      <br><br>
+.card a {
+  display: block;
+  margin-top: 8px;
+  color: #38bdf8;
+  text-decoration: none;
+}
 
-      Mon objectif est d’intégrer une licence informatique.
-    </p>
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
 
-  </div>
+/* ANIMATION JS */
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.6s;
+}
 
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="section">
-
-  <h2>Projets</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <h3>Site Web</h3>
-      <a href="site%20web/site-1.html.odt">Projet 1</a>
-      <a href="site%20web/site-2.html.odt">Projet 2</a>
-    </div>
-
-    <div class="card">
-      <h3>GLPI</h3>
-      <a href="glpi/glpi-1.pdf">Voir</a>
-    </div>
-
-    <div class="card">
-      <h3>PrestaShop</h3>
-      <a href="prestashop/presta-1.pdf.odt">Voir</a>
-    </div>
-
-    <div class="card">
-      <h3>SEO</h3>
-      <a href="seo/seo-1.pdf.docx">1</a>
-      <a href="seo/seo-2.pdf.odt">2</a>
-    </div>
-
-    <div class="card">
-      <h3>Veille</h3>
-      <a href="veille/veille-1.pdf.pdf">Voir</a>
-    </div>
-
-    <div class="card">
-      <h3>HTML</h3>
-      <a href="html/html-1.html.odt">1</a>
-      <a href="html/html-2.html.odt">2</a>
-      <a href="html/html-3.html.odt">3</a>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- STAGE -->
-<section id="stage" class="section">
-
-  <h2>Stage</h2>
-
-  <div class="card">
-
-    <h3>OSL COM</h3>
-
-    <p>
-      Stage effectué chez OSL COM pendant les deux années de BTS SIO.
-    </p>
-
-    <a href="rapport de stage/rapport de stage.pdf">📄 Rapport de stage</a>
-
-  </div>
-
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section">
-
-  <h2>Contact</h2>
-
-  <div class="card">
-    <p>Email : rayan.tabate@email.com</p>
-  </div>
-
-</section>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
