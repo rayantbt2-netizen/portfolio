@@ -1,161 +1,229 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio - Rayan Tabate</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Rayan Tabate</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- polices modernes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header>
-  <h1>Rayan Tabate</h1>
+<!-- NAV -->
+<header class="nav">
+  <div class="logo">RT</div>
   <nav>
     <a href="#profil">Profil</a>
     <a href="#formation">Formation</a>
     <a href="#projets">Projets</a>
-    <a href="#stage">Stage</a>
+    <a href="#stage">Stages</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-  <img src="photo.jpg" class="avatar">
-  <h2>Bienvenue sur mon portfolio</h2>
-  <p>BTS SIO SLAM - Développement web</p>
+  <img src="photo.jpg" class="avatar" alt="photo">
+
+  <h1 class="title">Bienvenue sur mon portfolio</h1>
+
+  <p class="subtitle">
+    BTS SIO SLAM — Développement web & systèmes informatiques
+  </p>
 </section>
 
-<!-- PROFIL (SIMPLE COMME AVANT) -->
-<section id="profil" class="section">
+<!-- PROFIL -->
+<section id="profil" class="section reveal">
+
   <h2>Profil</h2>
 
-  <p><b>Étudiant :</b> BTS SIO SLAM</p>
-  <p><b>Localisation :</b> Toulouse, Occitanie</p>
-  <p><b>Objectif :</b> Licence informatique</p>
-</section>
+  <div class="card big">
 
-<!-- FORMATION (STYLE PROPRE + LIGNE COMME TON ANCIEN) -->
-<section id="formation" class="section">
-<h2>Formation</h2>
+    <p>
+      Étudiant en BTS SIO SLAM basé à Toulouse.<br><br>
 
-<div class="formation">
+      Passionné par la création d’applications web, la gestion de bases de données et les systèmes informatiques.<br><br>
 
-  <div class="item">
-    <span>2021 - 2024</span>
-    <p>Bac Pro Systèmes Numériques - Toulouse</p>
+      J’aime comprendre comment fonctionnent les systèmes et développer des solutions simples et efficaces.<br><br>
+
+      Mon objectif est de poursuivre en licence informatique afin de me spécialiser dans le développement logiciel.
+    </p>
+
   </div>
 
-  <div class="line"></div>
+</section>
 
-  <div class="item">
-    <span>2024 - 2026</span>
-    <p>BTS SIO SLAM</p>
+<!-- FORMATION -->
+<section id="formation" class="section reveal">
+
+  <h2>Formation</h2>
+
+  <div class="timeline">
+
+    <div class="step">
+      <span>2021 - 2024</span>
+      <p>
+        Bac Pro Systèmes Numériques — Lycée Déodat de Séverac (Toulouse)
+      </p>
+    </div>
+
+    <div class="step">
+      <span>2024 - 2026</span>
+      <p>
+        BTS SIO option SLAM — Développement web & programmation
+      </p>
+    </div>
+
+    <div class="step">
+      <span>2026 - 2027</span>
+      <p>
+        Licence Informatique — poursuite d’études en développement logiciel
+      </p>
+    </div>
+
   </div>
 
-  <div class="line"></div>
+</section>
 
-  <div class="item">
-    <span>2026 - 2027</span>
-    <p>Licence Informatique</p>
+<!-- PROJETS -->
+<section id="projets" class="section reveal">
+
+  <h2>Projets</h2>
+
+  <div class="grid">
+
+    <!-- GLPI -->
+    <div class="card project">
+      <h3>GLPI</h3>
+      <p>
+        Gestion d’un parc informatique avec suivi des équipements et organisation des machines.
+      </p>
+
+      <a href="glpi/glpi-1.pdf">Consulter</a>
+    </div>
+
+    <!-- HTML -->
+    <div class="card project">
+      <h3>HTML</h3>
+      <p>
+        Création de pages web pour apprendre la structure HTML et l’organisation d’un site.
+      </p>
+
+      <a href="html/html-1.html.odt">Voir</a>
+    </div>
+
+    <!-- SITE WEB -->
+    <div class="card project">
+      <h3>Site Web</h3>
+      <p>
+        Conception d’un site vitrine avec HTML et CSS, navigation et mise en page.
+      </p>
+
+      <a href="site web/site-1.html.odt">Ouvrir</a>
+    </div>
+
+    <!-- PHP -->
+    <div class="card project">
+      <h3>Projet PHP / SQL</h3>
+      <p>
+        Développement d’un formulaire connecté à une base de données MySQL.
+      </p>
+
+      <a href="projet/projet1.pdf.odt">Consulter</a>
+    </div>
+
+    <!-- SEO -->
+    <div class="card project">
+      <h3>SEO</h3>
+      <p>
+        Analyse de mots-clés et optimisation de référencement web.
+      </p>
+
+      <a href="seo/seo-1.pdf.docx">Voir</a>
+    </div>
+
+    <!-- PRESTASHOP -->
+    <div class="card project">
+      <h3>PrestaShop</h3>
+      <p>
+        Création d’une identité visuelle pour un site e-commerce.
+      </p>
+
+      <a href="prestashop/presta-1.pdf.odt">Consulter</a>
+    </div>
+
+    <!-- VEILLE -->
+    <div class="card project">
+      <h3>Veille technologique</h3>
+      <p>
+        Étude de l’impact de l’intelligence artificielle dans le développement.
+      </p>
+
+      <a href="veille/veille-1.pdf.pdf">Lire</a>
+    </div>
+
   </div>
 
-</div>
 </section>
 
-<!-- PROJETS (⚠️ EXACTEMENT CE QUE TU AS DEMANDÉ) -->
-<section id="projets" class="section">
+<!-- STAGE -->
+<section id="stage" class="section reveal">
 
-<h2>Projets</h2>
+  <h2>Stages</h2>
 
-<div class="grid">
+  <div class="grid">
 
-<!-- GLPI -->
-<div class="card">
-<h3>GLPI – Gestion de parc informatique</h3>
-<p>Gestion des équipements et organisation du parc informatique</p>
-<a href="glpi/glpi-1.pdf">Voir détails</a>
-</div>
+    <div class="card">
+      <h3>OSLCOM — Stage 1</h3>
+      <p>
+        Intervention sur matériel informatique, diagnostic de pannes et maintenance.
+      </p>
 
-<!-- HTML -->
-<div class="card">
-<h3>HTML – Apprentissage</h3>
-<p>Création et structuration de pages web</p>
-<a href="html/html-1.html.odt">html-1</a>
-<a href="html/html-2.html.odt">html-2</a>
-<a href="html/html-3.html.odt">html-3</a>
-</div>
+      <a href="rapport de stage/rapport de stage.pdf">Rapport</a>
+    </div>
 
-<!-- PRESTASHOP -->
-<div class="card">
-<h3>PrestaShop</h3>
-<p>Création d’une charte graphique e-commerce</p>
-<a href="prestashop/presta-1.pdf.odt">presta-1</a>
-</div>
+    <div class="card">
+      <h3>OSLCOM — Stage 2</h3>
+      <p>
+        Développement d’une application web avec base de données.
+      </p>
 
-<!-- PROJET -->
-<div class="card">
-<h3>Projet PHP / SQL</h3>
-<p>Gestion de base de données et application web</p>
-<a href="projet/projet1.pdf.odt">projet1</a>
-<a href="projet/projet2.pdf.odt">projet2</a>
-<a href="projet/projet3.pdf.odt">projet3</a>
-</div>
+      <a href="rapport de stage/rapport de stage.pdf">Rapport</a>
+    </div>
 
-<!-- SEO -->
-<div class="card">
-<h3>SEO</h3>
-<p>Optimisation et référencement web</p>
-<a href="seo/seo-1.pdf.docx">seo-1</a>
-<a href="seo/seo-2.pdf.odt">seo-2</a>
-</div>
-
-<!-- SITE WEB -->
-<div class="card">
-<h3>Site Web</h3>
-<p>Création de site vitrine HTML/CSS</p>
-<a href="site web/site-1.html.odt">site-1</a>
-<a href="site web/site-2.html.odt">site-2</a>
-</div>
-
-<!-- VEILLE -->
-<div class="card">
-<h3>Veille technologique</h3>
-<p>Analyse des évolutions IT</p>
-<a href="veille/veille-1.pdf.pdf">Consulter</a>
-</div>
-
-</div>
-</section>
-
-<!-- STAGE (NE PAS MODIFIER SAUF AJOUT RAPPORT EN BAS) -->
-<section id="stage" class="section">
-
-<h2>Stages</h2>
-
-<div class="stage">
-
-<h3>Stage 1 — Center Telecom (5 semaines)</h3>
-<p>Accueil et conseil clients en magasin informatique</p>
-<p>Diagnostic et réparation smartphones / PC</p>
-<p>Remplacement composants</p>
-<p>Support utilisateur</p>
-
-<h3>Stage 2 — Center Telecom (6 semaines)</h3>
-<p>Développement application web PHP / MySQL</p>
-<p>Gestion base de données</p>
-<p>Maintenance Windows</p>
-
-<!-- AJOUT DEMANDÉ -->
-<div class="rapport">
-<h3>Rapport de stage</h3>
-<a href="rapport de stage/rapport de stage.pdf">Consulter</a>
-</div>
-
-</div>
+  </div>
 
 </section>
+
+<!-- CONTACT -->
+<section id="contact" class="section reveal">
+
+  <h2>Contact</h2>
+
+  <div class="card">
+    <p>Rayan Tabate — BTS SIO SLAM</p>
+  </div>
+
+</section>
+
+<!-- JS SIMPLE (animation scroll propre) -->
+<script>
+  const elements = document.querySelectorAll(".reveal");
+
+  window.addEventListener("scroll", () => {
+    elements.forEach(el => {
+      const top = el.getBoundingClientRect().top;
+      if(top < window.innerHeight - 100){
+        el.classList.add("active");
+      }
+    });
+  });
+</script>
 
 </body>
 </html>
