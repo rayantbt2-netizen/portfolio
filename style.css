@@ -1,16 +1,16 @@
 body {
 margin:0;
-font-family: Arial;
-background:#0b1220;
+font-family:Arial;
+background:#0f172a;
 color:white;
 }
 
-/* NAV */
+/* HEADER */
 header {
 display:flex;
 justify-content:space-between;
 padding:20px;
-background:#0f172a;
+background:#0b1220;
 position:fixed;
 width:100%;
 top:0;
@@ -26,7 +26,7 @@ text-decoration:none;
 .hero {
 margin-top:100px;
 text-align:center;
-padding:60px;
+padding:40px;
 }
 
 .avatar {
@@ -42,46 +42,15 @@ max-width:1000px;
 margin:auto;
 }
 
-/* PROFIL */
-.profil-box {
-display:flex;
-justify-content:space-between;
-gap:20px;
-background:#111827;
-padding:20px;
-border-radius:10px;
-}
-
-/* FORMATION */
-.timeline {
-display:flex;
-flex-direction:column;
-align-items:center;
-}
-
-.box {
-background:#1e293b;
-padding:20px;
-margin:10px;
-border-radius:10px;
-width:70%;
-}
-
-.year {
-color:#3b82f6;
-font-weight:bold;
-}
-
-.line {
-width:2px;
-height:30px;
-background:#3b82f6;
+/* VERSION SIMPLE (profil + formation) */
+.simple p {
+margin:10px 0;
 }
 
 /* PROJETS */
 .grid {
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:20px;
 }
 
@@ -89,52 +58,21 @@ gap:20px;
 background:#1e293b;
 padding:20px;
 border-radius:10px;
-text-align:center;
 }
 
 button {
 margin-top:10px;
-padding:10px;
+padding:8px;
 background:#3b82f6;
 color:white;
 border:none;
 cursor:pointer;
 }
 
-/* DOSSIER */
+/* DOSSIER JS */
 .folder {
 margin-top:20px;
-padding:20px;
-background:#0f172a;
-border-radius:10px;
-}
-
-/* STAGE */
-.stage-grid {
-display:flex;
-gap:20px;
-flex-wrap:wrap;
-}
-
-.stage-card {
-flex:1;
-padding:20px;
-border-radius:10px;
+padding:15px;
 background:#111827;
-}
-
-.blue { border-left:4px solid #3b82f6; }
-.violet { border-left:4px solid #a855f7; }
-
-.company {
-color:#94a3b8;
-}
-
-.list p {
-margin:5px 0;
-}
-
-/* CONTACT */
-section:last-child {
-text-align:center;
+border-radius:10px;
 }
