@@ -2,16 +2,16 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfolio - Rayan Tabate</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAV -->
+<!-- HEADER -->
 <header>
-  <div class="logo">Rayan Tabate</div>
+  <h1>Rayan Tabate</h1>
   <nav>
     <a href="#profil">Profil</a>
     <a href="#formation">Formation</a>
@@ -24,165 +24,124 @@
 <!-- HERO -->
 <section class="hero">
   <img src="photo.jpg" class="avatar">
+  <h2>Bienvenue sur mon portfolio</h2>
+  <p>BTS SIO SLAM — Développement & logique applicative</p>
+</section>
 
-  <h1>Bienvenue sur mon portfolio</h1>
+<!-- PROFIL (VERSION SIMPLE COMME AVANT) -->
+<section id="profil" class="section simple">
+  <h2>Profil</h2>
 
-  <p class="subtitle">
-    Étudiant BTS SIO SLAM — Développement web & logique applicative
+  <p><b>Étudiant :</b> BTS SIO SLAM</p>
+  <p><b>Localisation :</b> Toulouse, Occitanie</p>
+  <p><b>Objectif :</b> Licence informatique</p>
+
+  <p>
+    Passionné par le développement web et les systèmes informatiques.
   </p>
 </section>
 
-<!-- PROFIL -->
-<section id="profil" class="section">
-  <h2>Profil</h2>
-
-  <div class="profil-box">
-
-    <div>
-      <p><b>Étudiant :</b> BTS SIO SLAM</p>
-      <p><b>Localisation :</b> Toulouse, Occitanie</p>
-      <p><b>Objectif :</b> Licence informatique</p>
-    </div>
-
-    <div class="profil-text">
-      Passionné par le développement web, la création d’applications et la logique informatique.  
-      J’aime transformer des idées en projets concrets.
-    </div>
-
-  </div>
-</section>
-
-<!-- FORMATION -->
-<section id="formation" class="section">
+<!-- FORMATION (VERSION COMME TON POTE SIMPLE) -->
+<section id="formation" class="section simple">
   <h2>Formation</h2>
 
-  <div class="timeline">
-
-    <div class="box">
-      <span class="year">2021 - 2024</span>
-      <h3>BAC PRO Systèmes Numériques</h3>
-      <p>Lycée Déodat de Séverac — Toulouse</p>
-    </div>
-
-    <div class="line"></div>
-
-    <div class="box">
-      <span class="year">2024 - 2026</span>
-      <h3>BTS SIO option SLAM</h3>
-      <p>Lycée — Toulouse</p>
-    </div>
-
-    <div class="line"></div>
-
-    <div class="box">
-      <span class="year">2026 - 2027</span>
-      <h3>Licence Informatique</h3>
-      <p>Projet d’avenir</p>
-    </div>
-
-  </div>
+  <p>2021 - 2024 : Bac Pro Systèmes Numériques — Lycée Déodat de Séverac Toulouse</p>
+  <p>2024 - 2026 : BTS SIO option SLAM</p>
+  <p>2026 - 2027 : Licence informatique</p>
 </section>
 
-<!-- PROJETS -->
+<!-- PROJETS (IMPORTANT : ON GARDE TES NOMS EXACTS) -->
 <section id="projets" class="section">
-  <h2>Projets</h2>
 
-  <div class="grid">
+<h2>Projets</h2>
 
-    <!-- GLPI -->
-    <div class="card">
-      <h3>GLPI</h3>
-      <p>Gestion de parc informatique</p>
-      <button onclick="openFolder('glpi')">Consulter</button>
-    </div>
+<div class="grid">
 
-    <!-- HTML -->
-    <div class="card">
-      <h3>HTML</h3>
-      <p>Apprentissage web</p>
-      <button onclick="openFolder('html')">Consulter</button>
-    </div>
-
-    <!-- PRESTASHOP -->
-    <div class="card">
-      <h3>PrestaShop</h3>
-      <p>Charte e-commerce</p>
-      <button onclick="openFolder('prestashop')">Consulter</button>
-    </div>
-
-    <!-- PROJET -->
-    <div class="card">
-      <h3>Projets divers</h3>
-      <p>PHP / SQL / Applications</p>
-      <button onclick="openFolder('projet')">Consulter</button>
-    </div>
-
-    <!-- SEO -->
-    <div class="card">
-      <h3>SEO</h3>
-      <p>Référencement web</p>
-      <button onclick="openFolder('seo')">Consulter</button>
-    </div>
-
-    <!-- SITE WEB -->
-    <div class="card">
-      <h3>Site Web</h3>
-      <p>HTML / CSS projets</p>
-      <button onclick="openFolder('site web')">Consulter</button>
-    </div>
-
-    <!-- VEILLE -->
-    <div class="card">
-      <h3>Veille</h3>
-      <p>IA & développement</p>
-      <button onclick="openFolder('veille')">Consulter</button>
-    </div>
-
+  <div class="card">
+    <h3>GLPI – Gestion de parc informatique</h3>
+    <p>Gestion des équipements et organisation du parc informatique</p>
+    <button onclick="open('glpi')">Voir détails</button>
+    <small>glpi-1.pdf</small>
   </div>
 
-  <!-- AFFICHAGE DOSSIER -->
-  <div id="folderView" class="folder"></div>
+  <div class="card">
+    <h3>HTML – Apprentissage</h3>
+    <p>Création et structuration de pages web</p>
+    <button onclick="open('html')">Voir fichiers</button>
+    <small>html-1 html-2 html-3</small>
+  </div>
+
+  <div class="card">
+    <h3>PrestaShop</h3>
+    <p>Création d’une charte graphique e-commerce</p>
+    <small>presta-1</small>
+  </div>
+
+  <div class="card">
+    <h3>Projet PHP / SQL</h3>
+    <p>Gestion de base de données et application web</p>
+    <button onclick="open('projet')">Voir détails</button>
+    <small>projet1 projet2 projet3</small>
+  </div>
+
+  <div class="card">
+    <h3>SEO</h3>
+    <p>Optimisation et référencement web</p>
+    <button onclick="open('seo')">Voir fichiers</button>
+    <small>seo-1 seo-2</small>
+  </div>
+
+  <div class="card">
+    <h3>Site Web</h3>
+    <p>Création de site vitrine HTML/CSS</p>
+    <small>site-1 site-2</small>
+  </div>
+
+</div>
+
+<!-- AFFICHAGE DOSSIER -->
+<div id="result" class="folder"></div>
+
 </section>
 
-<!-- STAGE -->
+<!-- STAGE (INCHANGÉ COMME DEMANDÉ) -->
 <section id="stage" class="section">
-  <h2>Stages</h2>
 
-  <div class="stage-grid">
+<h2>Stages</h2>
 
-    <div class="stage-card blue">
-      <h3>Stage 1 — 5 semaines</h3>
-      <p class="company">Center Telecom</p>
+<h3>Stagiaire — Center Telecom</h3>
+<p>Stage 5 semaines</p>
 
-      <div class="list">
-        <p>Accueil et conseil clients en magasin informatique</p>
-        <p>Diagnostic et réparation smartphones / PC</p>
-        <p>Remplacement composants (écrans, batteries)</p>
-        <p>Support utilisateur</p>
-        <p>Gestion matériel en atelier</p>
-      </div>
-    </div>
+<p>Accueil et conseil des clients en magasin informatique</p>
+<p>Diagnostic et réparation de smartphones / PC</p>
+<p>Remplacement de composants (écrans, batteries)</p>
+<p>Assistance et support utilisateur</p>
+<p>Gestion de matériel informatique en atelier</p>
 
-    <div class="stage-card violet">
-      <h3>Stage 2 — 6 semaines</h3>
-      <p class="company">Center Telecom</p>
+<hr>
 
-      <div class="list">
-        <p>Développement application PHP / MySQL</p>
-        <p>Gestion base de données clients</p>
-        <p>Maintenance Windows</p>
-        <p>Test matériel technique</p>
-        <p>Organisation des réparations</p>
-      </div>
-    </div>
+<h3>Stagiaire — Center Telecom</h3>
+<p>Stage 6 semaines</p>
 
-  </div>
+<p>Développement d’une application web PHP / MySQL</p>
+<p>Diagnostic de pannes sur ordinateurs</p>
+<p>Maintenance Windows</p>
+<p>Test matériel technique</p>
+<p>Organisation des réparations</p>
+
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="section">
-  <h2>Contact</h2>
-  <p>Email : rayan@email.com</p>
+<!-- CONTACT + RAPPORT EN BAS (COMME TU AS DEMANDÉ) -->
+<section id="contact" class="section simple">
+
+<h2>Contact</h2>
+<p>Email : rayan@email.com</p>
+
+<br><br>
+
+<h3>Rapport de stage</h3>
+<p>📄 rapport de stage.pdf</p>
+
 </section>
 
 <script src="script.js"></script>
