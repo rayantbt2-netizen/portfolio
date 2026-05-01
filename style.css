@@ -11,9 +11,6 @@ display:flex;
 justify-content:space-between;
 padding:20px;
 background:#0b1220;
-position:fixed;
-width:100%;
-top:0;
 }
 
 nav a {
@@ -24,27 +21,37 @@ text-decoration:none;
 
 /* HERO */
 .hero {
-margin-top:100px;
 text-align:center;
-padding:40px;
+padding:50px;
 }
 
 .avatar {
 width:120px;
 border-radius:50%;
-border:3px solid #3b82f6;
 }
 
 /* SECTIONS */
 .section {
-padding:60px 20px;
-max-width:1000px;
+padding:50px;
+max-width:900px;
 margin:auto;
 }
 
-/* VERSION SIMPLE (profil + formation) */
-.simple p {
-margin:10px 0;
+/* FORMATION */
+.formation {
+text-align:center;
+}
+
+.item span {
+color:#3b82f6;
+font-weight:bold;
+}
+
+.line {
+height:20px;
+width:2px;
+background:#3b82f6;
+margin:auto;
 }
 
 /* PROJETS */
@@ -60,19 +67,17 @@ padding:20px;
 border-radius:10px;
 }
 
-button {
-margin-top:10px;
-padding:8px;
-background:#3b82f6;
-color:white;
-border:none;
-cursor:pointer;
+.card a {
+display:block;
+margin-top:5px;
+color:#3b82f6;
 }
 
-/* DOSSIER JS */
-.folder {
-margin-top:20px;
-padding:15px;
-background:#111827;
-border-radius:10px;
+/* STAGE */
+.stage p {
+margin:5px 0;
+}
+
+.rapport a {
+color:#3b82f6;
 }
