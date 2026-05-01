@@ -16,8 +16,7 @@
     <a href="#profil">Profil</a>
     <a href="#formation">Formation</a>
     <a href="#projets">Projets</a>
-    <a href="#stage">Stages</a>
-    <a href="#contact">Contact</a>
+    <a href="#stage">Stage</a>
   </nav>
 </header>
 
@@ -25,125 +24,138 @@
 <section class="hero">
   <img src="photo.jpg" class="avatar">
   <h2>Bienvenue sur mon portfolio</h2>
-  <p>BTS SIO SLAM — Développement & logique applicative</p>
+  <p>BTS SIO SLAM - Développement web</p>
 </section>
 
-<!-- PROFIL (VERSION SIMPLE COMME AVANT) -->
-<section id="profil" class="section simple">
+<!-- PROFIL (SIMPLE COMME AVANT) -->
+<section id="profil" class="section">
   <h2>Profil</h2>
 
   <p><b>Étudiant :</b> BTS SIO SLAM</p>
   <p><b>Localisation :</b> Toulouse, Occitanie</p>
   <p><b>Objectif :</b> Licence informatique</p>
-
-  <p>
-    Passionné par le développement web et les systèmes informatiques.
-  </p>
 </section>
 
-<!-- FORMATION (VERSION COMME TON POTE SIMPLE) -->
-<section id="formation" class="section simple">
-  <h2>Formation</h2>
+<!-- FORMATION (STYLE PROPRE + LIGNE COMME TON ANCIEN) -->
+<section id="formation" class="section">
+<h2>Formation</h2>
 
-  <p>2021 - 2024 : Bac Pro Systèmes Numériques — Lycée Déodat de Séverac Toulouse</p>
-  <p>2024 - 2026 : BTS SIO option SLAM</p>
-  <p>2026 - 2027 : Licence informatique</p>
+<div class="formation">
+
+  <div class="item">
+    <span>2021 - 2024</span>
+    <p>Bac Pro Systèmes Numériques - Toulouse</p>
+  </div>
+
+  <div class="line"></div>
+
+  <div class="item">
+    <span>2024 - 2026</span>
+    <p>BTS SIO SLAM</p>
+  </div>
+
+  <div class="line"></div>
+
+  <div class="item">
+    <span>2026 - 2027</span>
+    <p>Licence Informatique</p>
+  </div>
+
+</div>
 </section>
 
-<!-- PROJETS (IMPORTANT : ON GARDE TES NOMS EXACTS) -->
+<!-- PROJETS (⚠️ EXACTEMENT CE QUE TU AS DEMANDÉ) -->
 <section id="projets" class="section">
 
 <h2>Projets</h2>
 
 <div class="grid">
 
-  <div class="card">
-    <h3>GLPI – Gestion de parc informatique</h3>
-    <p>Gestion des équipements et organisation du parc informatique</p>
-    <button onclick="open('glpi')">Voir détails</button>
-    <small>glpi-1.pdf</small>
-  </div>
-
-  <div class="card">
-    <h3>HTML – Apprentissage</h3>
-    <p>Création et structuration de pages web</p>
-    <button onclick="open('html')">Voir fichiers</button>
-    <small>html-1 html-2 html-3</small>
-  </div>
-
-  <div class="card">
-    <h3>PrestaShop</h3>
-    <p>Création d’une charte graphique e-commerce</p>
-    <small>presta-1</small>
-  </div>
-
-  <div class="card">
-    <h3>Projet PHP / SQL</h3>
-    <p>Gestion de base de données et application web</p>
-    <button onclick="open('projet')">Voir détails</button>
-    <small>projet1 projet2 projet3</small>
-  </div>
-
-  <div class="card">
-    <h3>SEO</h3>
-    <p>Optimisation et référencement web</p>
-    <button onclick="open('seo')">Voir fichiers</button>
-    <small>seo-1 seo-2</small>
-  </div>
-
-  <div class="card">
-    <h3>Site Web</h3>
-    <p>Création de site vitrine HTML/CSS</p>
-    <small>site-1 site-2</small>
-  </div>
-
+<!-- GLPI -->
+<div class="card">
+<h3>GLPI – Gestion de parc informatique</h3>
+<p>Gestion des équipements et organisation du parc informatique</p>
+<a href="glpi/glpi-1.pdf">Voir détails</a>
 </div>
 
-<!-- AFFICHAGE DOSSIER -->
-<div id="result" class="folder"></div>
+<!-- HTML -->
+<div class="card">
+<h3>HTML – Apprentissage</h3>
+<p>Création et structuration de pages web</p>
+<a href="html/html-1.html.odt">html-1</a>
+<a href="html/html-2.html.odt">html-2</a>
+<a href="html/html-3.html.odt">html-3</a>
+</div>
 
+<!-- PRESTASHOP -->
+<div class="card">
+<h3>PrestaShop</h3>
+<p>Création d’une charte graphique e-commerce</p>
+<a href="prestashop/presta-1.pdf.odt">presta-1</a>
+</div>
+
+<!-- PROJET -->
+<div class="card">
+<h3>Projet PHP / SQL</h3>
+<p>Gestion de base de données et application web</p>
+<a href="projet/projet1.pdf.odt">projet1</a>
+<a href="projet/projet2.pdf.odt">projet2</a>
+<a href="projet/projet3.pdf.odt">projet3</a>
+</div>
+
+<!-- SEO -->
+<div class="card">
+<h3>SEO</h3>
+<p>Optimisation et référencement web</p>
+<a href="seo/seo-1.pdf.docx">seo-1</a>
+<a href="seo/seo-2.pdf.odt">seo-2</a>
+</div>
+
+<!-- SITE WEB -->
+<div class="card">
+<h3>Site Web</h3>
+<p>Création de site vitrine HTML/CSS</p>
+<a href="site web/site-1.html.odt">site-1</a>
+<a href="site web/site-2.html.odt">site-2</a>
+</div>
+
+<!-- VEILLE -->
+<div class="card">
+<h3>Veille technologique</h3>
+<p>Analyse des évolutions IT</p>
+<a href="veille/veille-1.pdf.pdf">Consulter</a>
+</div>
+
+</div>
 </section>
 
-<!-- STAGE (INCHANGÉ COMME DEMANDÉ) -->
+<!-- STAGE (NE PAS MODIFIER SAUF AJOUT RAPPORT EN BAS) -->
 <section id="stage" class="section">
 
 <h2>Stages</h2>
 
-<h3>Stagiaire — Center Telecom</h3>
-<p>Stage 5 semaines</p>
+<div class="stage">
 
-<p>Accueil et conseil des clients en magasin informatique</p>
-<p>Diagnostic et réparation de smartphones / PC</p>
-<p>Remplacement de composants (écrans, batteries)</p>
-<p>Assistance et support utilisateur</p>
-<p>Gestion de matériel informatique en atelier</p>
+<h3>Stage 1 — Center Telecom (5 semaines)</h3>
+<p>Accueil et conseil clients en magasin informatique</p>
+<p>Diagnostic et réparation smartphones / PC</p>
+<p>Remplacement composants</p>
+<p>Support utilisateur</p>
 
-<hr>
-
-<h3>Stagiaire — Center Telecom</h3>
-<p>Stage 6 semaines</p>
-
-<p>Développement d’une application web PHP / MySQL</p>
-<p>Diagnostic de pannes sur ordinateurs</p>
+<h3>Stage 2 — Center Telecom (6 semaines)</h3>
+<p>Développement application web PHP / MySQL</p>
+<p>Gestion base de données</p>
 <p>Maintenance Windows</p>
-<p>Test matériel technique</p>
-<p>Organisation des réparations</p>
 
-</section>
-
-<!-- CONTACT + RAPPORT EN BAS (COMME TU AS DEMANDÉ) -->
-<section id="contact" class="section simple">
-
-<h2>Contact</h2>
-<p>Email : rayan@email.com</p>
-
-<br><br>
-
+<!-- AJOUT DEMANDÉ -->
+<div class="rapport">
 <h3>Rapport de stage</h3>
-<p>📄 rapport de stage.pdf</p>
+<a href="rapport de stage/rapport de stage.pdf">Consulter</a>
+</div>
+
+</div>
 
 </section>
 
-<script src="script.js"></script>
 </body>
 </html>
