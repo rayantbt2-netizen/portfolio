@@ -10,7 +10,7 @@
 <body>
 
 <header class="nav">
-  <h1>Rayan Tabate</h1>
+  <div class="logo">Rayan Tabate</div>
 
   <nav>
     <a href="#about">Profil</a>
@@ -23,28 +23,31 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-box">
-    <img src="photo.jpg" class="avatar" alt="photo">
-    <h2>Étudiant BTS SIO SLAM</h2>
-    <p>Développement web · Systèmes · Réseaux</p>
-  </div>
+
+  <img src="photo.jpg" class="avatar" alt="photo">
+
+  <h1>Bienvenue sur mon portfolio</h1>
+  <p>BTS SIO SLAM · Développement web · Systèmes</p>
+
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="section">
 
-  <h2>À propos de moi</h2>
+  <h2>Profil</h2>
 
-  <div class="card">
+  <div class="card glow">
+
     <p>
-      Je m'appelle Rayan Tabate.<br><br>
+      Étudiant en BTS SIO SLAM à Toulouse (Occitanie)<br><br>
 
-      Étudiant en BTS SIO option SLAM à Toulouse (Occitanie).<br><br>
+      Passionné par le développement web et les systèmes informatiques.<br><br>
 
-      Passionné par le développement web, les bases de données et les systèmes informatiques.<br><br>
+      J’aime créer des applications, gérer des bases de données et comprendre le fonctionnement des systèmes.<br><br>
 
-      Objectif : intégrer une licence informatique pour approfondir mes compétences en développement.
+      Objectif : intégrer une licence informatique.
     </p>
+
   </div>
 
 </section>
@@ -56,77 +59,56 @@
 
   <div class="grid">
 
-    <!-- GLPI -->
     <div class="project">
-      <h3>GLPI – Gestion de parc informatique</h3>
-      <p>
-        Création et gestion d’un inventaire informatique avec GLPI.<br>
-        Ajout des équipements, fabricants, statuts et localisation des machines.
-      </p>
-      <a href="glpi/glpi-1.pdf">Consulter</a>
+      <h3>GLPI – Parc informatique</h3>
+      <p>Gestion des équipements, statuts et localisation</p>
+      <a href="glpi/glpi-1.pdf">Ouvrir</a>
     </div>
 
-    <!-- HTML -->
     <div class="project">
-      <h3>HTML – Apprentissage web</h3>
-      <p>
-        Exercices HTML sur la structure de pages web et l’organisation du contenu.
-      </p>
+      <h3>HTML – Apprentissage</h3>
+      <p>Structure HTML et pages web</p>
 
       <a href="html/html-1.html.odt">HTML 1</a>
       <a href="html/html-2.html.odt">HTML 2</a>
       <a href="html/html-3.html.odt">HTML 3</a>
     </div>
 
-    <!-- PRESTASHOP -->
     <div class="project">
-      <h3>PrestaShop – Charte graphique</h3>
-      <p>
-        Création d’une identité visuelle pour un site e-commerce.
-      </p>
-      <a href="prestashop/presta-1.pdf.odt">Consulter</a>
-    </div>
-
-    <!-- PROJET -->
-    <div class="project">
-      <h3>Projets – Développement</h3>
-      <p>
-        Travaux de développement et analyse dans le cadre du BTS SIO SLAM.
-      </p>
-
-      <a href="projet/projet1.pdf.odt">Projet 1</a>
-      <a href="projet/projet2.pdf.odt">Projet 2</a>
-      <a href="projet/projet3.pdf.odt">Projet 3</a>
-    </div>
-
-    <!-- SITE WEB -->
-    <div class="project">
-      <h3>Site web HTML/CSS</h3>
-      <p>
-        Création d’un site web structuré avec navigation et design CSS.
-      </p>
+      <h3>Site Web</h3>
+      <p>Création de site vitrine HTML/CSS</p>
 
       <a href="site web/site-1.html.odt">Site 1</a>
       <a href="site web/site-2.html.odt">Site 2</a>
     </div>
 
-    <!-- SEO -->
     <div class="project">
-      <h3>SEO – Référencement web</h3>
-      <p>
-        Analyse de mots-clés et optimisation du référencement naturel.
-      </p>
+      <h3>Projet PHP / SQL</h3>
+      <p>Gestion de base de données et formulaire</p>
+
+      <a href="projet/projet1.pdf.odt">P1</a>
+      <a href="projet/projet2.pdf.odt">P2</a>
+      <a href="projet/projet3.pdf.odt">P3</a>
+    </div>
+
+    <div class="project">
+      <h3>SEO</h3>
+      <p>Analyse de mots-clés et référencement</p>
 
       <a href="seo/seo-1.pdf.docx">SEO 1</a>
       <a href="seo/seo-2.pdf.odt">SEO 2</a>
     </div>
 
-    <!-- VEILLE -->
     <div class="project">
-      <h3>Veille technologique</h3>
-      <p>
-        Étude de l’intelligence artificielle et de son impact sur le développement.
-      </p>
+      <h3>PrestaShop</h3>
+      <p>Charte graphique e-commerce</p>
+
+      <a href="prestashop/presta-1.pdf.odt">Voir</a>
+    </div>
+
+    <div class="project">
+      <h3>Veille IA</h3>
+      <p>Impact de l’intelligence artificielle</p>
 
       <a href="veille/veille-1.pdf.pdf">Consulter</a>
     </div>
@@ -145,8 +127,8 @@
     <div class="card">
       <h3>Stage 1 – OSLCOM</h3>
       <p>
-        Réparation PC et smartphones<br>
-        Maintenance et diagnostic<br>
+        Réparation PC / smartphones<br>
+        Diagnostic / maintenance<br>
         Assistance utilisateurs
       </p>
       <a href="rapport de stage/rapport de stage.pdf">Rapport</a>
@@ -155,8 +137,8 @@
     <div class="card">
       <h3>Stage 2 – OSLCOM</h3>
       <p>
-        Développement web PHP/MySQL<br>
-        Gestion base de données clients<br>
+        Développement web PHP / MySQL<br>
+        Gestion base de données<br>
         Application de gestion
       </p>
       <a href="rapport de stage/rapport de stage.pdf">Rapport</a>
@@ -171,12 +153,12 @@
 
   <h2>Veille technologique</h2>
 
-  <div class="card">
+  <div class="card glow">
     <p>
-      Sujet : Impact de l’intelligence artificielle sur le développement<br><br>
+      Étude de l’impact de l’intelligence artificielle sur le développement logiciel.<br><br>
 
       Outils : Feedly, Google Alerts<br>
-      Objectif : suivre l’évolution des technologies et du métier de développeur
+      Objectif : suivre l’évolution du métier de développeur
     </p>
   </div>
 
