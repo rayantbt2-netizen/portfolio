@@ -4,78 +4,85 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Rayan Tabate</title>
+
   <link rel="stylesheet" href="style.css">
+
+  <!-- polices modernes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+<!-- NAV -->
 <header class="nav">
-  <div class="logo">Rayan Tabate</div>
-
+  <div class="logo">RT</div>
   <nav>
-    <a href="#about">Profil</a>
+    <a href="#profil">Profil</a>
     <a href="#formation">Formation</a>
-    <a href="#projects">Projets</a>
-    <a href="#stage">Stage</a>
+    <a href="#projets">Projets</a>
+    <a href="#stage">Stages</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-
   <img src="photo.jpg" class="avatar" alt="photo">
 
-  <h1>Bienvenue sur mon portfolio</h1>
-  <p>BTS SIO SLAM · Développement Web · Systèmes</p>
+  <h1 class="title">Bienvenue sur mon portfolio</h1>
 
+  <p class="subtitle">
+    BTS SIO SLAM — Développement web & systèmes informatiques
+  </p>
 </section>
 
 <!-- PROFIL -->
-<section id="about" class="section">
+<section id="profil" class="section reveal">
 
   <h2>Profil</h2>
 
-  <div class="card">
+  <div class="card big">
+
     <p>
-      Étudiant en BTS SIO SLAM à Toulouse (Occitanie)<br><br>
+      Étudiant en BTS SIO SLAM basé à Toulouse.<br><br>
 
-      Passionné par le développement web et la gestion de systèmes informatiques.<br><br>
+      Passionné par la création d’applications web, la gestion de bases de données et les systèmes informatiques.<br><br>
 
-      Objectif : intégrer une licence informatique et évoluer dans le développement logiciel.
+      J’aime comprendre comment fonctionnent les systèmes et développer des solutions simples et efficaces.<br><br>
+
+      Mon objectif est de poursuivre en licence informatique afin de me spécialiser dans le développement logiciel.
     </p>
+
   </div>
 
 </section>
 
 <!-- FORMATION -->
-<section id="formation" class="section">
+<section id="formation" class="section reveal">
 
   <h2>Formation</h2>
 
   <div class="timeline">
 
-    <div class="box">
-      <h3>2021 - 2024</h3>
+    <div class="step">
+      <span>2021 - 2024</span>
       <p>
-        BAC PRO Systèmes Numériques<br>
-        Lycée Déodat de Séverac — Toulouse
+        Bac Pro Systèmes Numériques — Lycée Déodat de Séverac (Toulouse)
       </p>
     </div>
 
-    <div class="box">
-      <h3>2024 - 2026</h3>
+    <div class="step">
+      <span>2024 - 2026</span>
       <p>
-        BTS SIO option SLAM<br>
-        Développement web et gestion de bases de données
+        BTS SIO option SLAM — Développement web & programmation
       </p>
     </div>
 
-    <div class="box">
-      <h3>2026 - 2027</h3>
+    <div class="step">
+      <span>2026 - 2027</span>
       <p>
-        Licence Informatique<br>
-        (objectif poursuite d’études)
+        Licence Informatique — poursuite d’études en développement logiciel
       </p>
     </div>
 
@@ -84,119 +91,80 @@
 </section>
 
 <!-- PROJETS -->
-<section id="projects" class="section">
+<section id="projets" class="section reveal">
 
   <h2>Projets</h2>
 
   <div class="grid">
 
     <!-- GLPI -->
-    <div class="project">
-      <h3>GLPI – Gestion de parc</h3>
-      <p>Gestion des équipements informatiques</p>
-
-      <details>
-        <summary>Détails</summary>
-        <p>
-          Création des lieux (Toulouse / Cugnaux)<br>
-          Fabricants (HP, ASUS, Dell)<br>
-          Statuts (Neuf / En service / HS)<br>
-          Organisation du parc informatique
-        </p>
-      </details>
+    <div class="card project">
+      <h3>GLPI</h3>
+      <p>
+        Gestion d’un parc informatique avec suivi des équipements et organisation des machines.
+      </p>
 
       <a href="glpi/glpi-1.pdf">Consulter</a>
     </div>
 
     <!-- HTML -->
-    <div class="project">
-      <h3>HTML – Apprentissage</h3>
-      <p>Structuration de pages web</p>
+    <div class="card project">
+      <h3>HTML</h3>
+      <p>
+        Création de pages web pour apprendre la structure HTML et l’organisation d’un site.
+      </p>
 
-      <details>
-        <summary>Détails</summary>
-        <p>
-          Création de pages HTML<br>
-          Organisation du contenu<br>
-          Découverte CSS
-        </p>
-      </details>
-
-      <a href="html/html-1.html.odt">HTML 1</a>
-      <a href="html/html-2.html.odt">HTML 2</a>
-      <a href="html/html-3.html.odt">HTML 3</a>
+      <a href="html/html-1.html.odt">Voir</a>
     </div>
 
     <!-- SITE WEB -->
-    <div class="project">
+    <div class="card project">
       <h3>Site Web</h3>
-      <p>Site vitrine HTML/CSS</p>
+      <p>
+        Conception d’un site vitrine avec HTML et CSS, navigation et mise en page.
+      </p>
 
-      <details>
-        <summary>Détails</summary>
-        <p>
-          Création de pages web<br>
-          Mise en page CSS<br>
-          Navigation interne
-        </p>
-      </details>
-
-      <a href="site web/site-1.html.odt">Site 1</a>
-      <a href="site web/site-2.html.odt">Site 2</a>
+      <a href="site web/site-1.html.odt">Ouvrir</a>
     </div>
 
-    <!-- PROJET -->
-    <div class="project">
+    <!-- PHP -->
+    <div class="card project">
       <h3>Projet PHP / SQL</h3>
-      <p>Gestion base de données</p>
+      <p>
+        Développement d’un formulaire connecté à une base de données MySQL.
+      </p>
 
-      <details>
-        <summary>Détails</summary>
-        <p>
-          Formulaire de satisfaction<br>
-          Base MySQL<br>
-          Calcul de moyenne<br>
-          Requêtes SQL
-        </p>
-      </details>
-
-      <a href="projet/projet1.pdf.odt">P1</a>
-      <a href="projet/projet2.pdf.odt">P2</a>
-      <a href="projet/projet3.pdf.odt">P3</a>
+      <a href="projet/projet1.pdf.odt">Consulter</a>
     </div>
 
     <!-- SEO -->
-    <div class="project">
+    <div class="card project">
       <h3>SEO</h3>
-      <p>Référencement web</p>
+      <p>
+        Analyse de mots-clés et optimisation de référencement web.
+      </p>
 
-      <details>
-        <summary>Détails</summary>
-        <p>
-          Analyse de mots-clés<br>
-          Étude de concurrence<br>
-          Optimisation contenu
-        </p>
-      </details>
-
-      <a href="seo/seo-1.pdf.docx">SEO 1</a>
-      <a href="seo/seo-2.pdf.odt">SEO 2</a>
+      <a href="seo/seo-1.pdf.docx">Voir</a>
     </div>
 
     <!-- PRESTASHOP -->
-    <div class="project">
+    <div class="card project">
       <h3>PrestaShop</h3>
-      <p>Charte graphique e-commerce</p>
+      <p>
+        Création d’une identité visuelle pour un site e-commerce.
+      </p>
 
       <a href="prestashop/presta-1.pdf.odt">Consulter</a>
     </div>
 
     <!-- VEILLE -->
-    <div class="project">
-      <h3>Veille IA</h3>
-      <p>Intelligence artificielle & dev</p>
+    <div class="card project">
+      <h3>Veille technologique</h3>
+      <p>
+        Étude de l’impact de l’intelligence artificielle dans le développement.
+      </p>
 
-      <a href="veille/veille-1.pdf.pdf">Consulter</a>
+      <a href="veille/veille-1.pdf.pdf">Lire</a>
     </div>
 
   </div>
@@ -204,29 +172,25 @@
 </section>
 
 <!-- STAGE -->
-<section id="stage" class="section">
+<section id="stage" class="section reveal">
 
   <h2>Stages</h2>
 
   <div class="grid">
 
     <div class="card">
-      <h3>Stage 1 – OSLCOM</h3>
+      <h3>OSLCOM — Stage 1</h3>
       <p>
-        Réparation PC et smartphones<br>
-        Maintenance systèmes<br>
-        Assistance utilisateurs
+        Intervention sur matériel informatique, diagnostic de pannes et maintenance.
       </p>
 
       <a href="rapport de stage/rapport de stage.pdf">Rapport</a>
     </div>
 
     <div class="card">
-      <h3>Stage 2 – OSLCOM</h3>
+      <h3>OSLCOM — Stage 2</h3>
       <p>
-        Développement web PHP/MySQL<br>
-        Gestion base de données<br>
-        Application de gestion
+        Développement d’une application web avec base de données.
       </p>
 
       <a href="rapport de stage/rapport de stage.pdf">Rapport</a>
@@ -237,15 +201,29 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section">
+<section id="contact" class="section reveal">
 
   <h2>Contact</h2>
 
   <div class="card">
-    <p>Email : rayan.tabate@email.com</p>
+    <p>Rayan Tabate — BTS SIO SLAM</p>
   </div>
 
 </section>
+
+<!-- JS SIMPLE (animation scroll propre) -->
+<script>
+  const elements = document.querySelectorAll(".reveal");
+
+  window.addEventListener("scroll", () => {
+    elements.forEach(el => {
+      const top = el.getBoundingClientRect().top;
+      if(top < window.innerHeight - 100){
+        el.classList.add("active");
+      }
+    });
+  });
+</script>
 
 </body>
 </html>
