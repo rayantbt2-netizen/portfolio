@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #0a0f1f;
+  background: #0b1220;
   color: white;
 }
 
@@ -17,13 +17,18 @@ body {
   padding: 15px 40px;
   display: flex;
   justify-content: space-between;
-  background: #0a0f1f;
+  background: #0b1220;
 }
 
 .nav ul {
   display: flex;
   gap: 20px;
   list-style: none;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
 }
 
 /* HERO */
@@ -34,29 +39,29 @@ body {
   align-items: center;
 }
 
-.avatar {
-  width: 120px;
-  border-radius: 50%;
-}
-
-.hero-content {
+.hero-box {
   text-align: center;
 }
 
-#title {
-  font-size: 30px;
-  color: #4f9cff;
+.avatar {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
-/* SECTION */
+.subtitle {
+  color: #94a3b8;
+}
+
+/* SECTIONS */
 .section {
   padding: 100px 20px;
   max-width: 1000px;
   margin: auto;
 }
 
-/* BOX */
-.box {
+/* CARDS */
+.card {
   background: #111827;
   padding: 20px;
   border-radius: 10px;
@@ -77,24 +82,19 @@ body {
   gap: 20px;
 }
 
-.stage {
+.stage-card {
   background: #111827;
   padding: 20px;
   border-radius: 10px;
 }
 
-.date {
-  font-size: 12px;
-  color: #9ca3af;
-}
-
-.duration {
-  font-size: 13px;
-  color: #6b7280;
+.meta {
+  display: block;
+  margin: 10px 0;
+  color: #94a3b8;
 }
 
 .skills {
-  font-size: 13px;
-  color: #9ca3af;
   margin-top: 10px;
+  color: #94a3b8;
 }
