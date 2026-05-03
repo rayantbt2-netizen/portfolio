@@ -284,5 +284,23 @@ width: 22px;
 height: 22px;
 }
 
+.hero-links {
+margin-top: 15px;
+display: flex;
+justify-content: center;
+gap: 15px;
+}
+
+.hero-links img {
+width: 28px;
+height: 28px;
+transition: 0.3s;
+cursor: pointer;
+}
+
+.hero-links img:hover {
+transform: scale(1.2);
+}
+
 
 
