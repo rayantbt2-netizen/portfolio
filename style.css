@@ -5,7 +5,10 @@ background: #0b1220;
 color: white;
 }
 
+/* ===================== */
 /* NAV */
+/* ===================== */
+
 .nav {
 position: fixed;
 top: 0;
@@ -18,7 +21,6 @@ background: #0f172a;
 z-index: 1000;
 }
 
-/* LOGO + CV */
 .logo-wrapper {
 display: flex;
 flex-direction: column;
@@ -26,14 +28,12 @@ align-items: flex-start;
 gap: 5px;
 }
 
-/* LOGO */
 .logo {
 font-weight: 700;
 font-size: 18px;
 color: #3b82f6;
 }
 
-/* CV BUTTON */
 .cv-btn {
 font-size: 12px;
 padding: 4px 10px;
@@ -49,14 +49,16 @@ background: #2563eb;
 transform: scale(1.05);
 }
 
-/* NAV LINKS */
 .nav a {
 margin: 0 10px;
 color: white;
 text-decoration: none;
 }
 
+/* ===================== */
 /* HERO */
+/* ===================== */
+
 .hero {
 height: 100vh;
 display: flex;
@@ -71,7 +73,6 @@ width: 160px;
 border-radius: 50%;
 }
 
-/* TITRES */
 h1 {
 font-size: 42px;
 }
@@ -80,28 +81,45 @@ font-size: 42px;
 opacity: 0.7;
 }
 
+/* ===================== */
 /* SECTIONS */
+/* ===================== */
+
 .section {
 padding: 100px 20px;
 max-width: 1100px;
 margin: auto;
 }
 
+/* ===================== */
 /* CARDS */
+/* ===================== */
+
 .card {
 background: #111827;
 padding: 20px;
 border-radius: 12px;
+transition: 0.3s;
 }
 
+.card:hover {
+transform: translateY(-5px);
+}
+
+/* ===================== */
 /* GRID */
+/* ===================== */
+
 .grid {
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 gap: 15px;
 }
 
-/* BUTTON */
+/* ===================== */
+/* LINKS / BUTTONS */
+/* ===================== */
+
 a {
 display: inline-block;
 margin-top: 10px;
@@ -110,9 +128,17 @@ background: #3b82f6;
 color: white;
 border-radius: 6px;
 text-decoration: none;
+transition: 0.3s;
 }
 
+a:hover {
+background: #2563eb;
+}
+
+/* ===================== */
 /* TIMELINE */
+/* ===================== */
+
 .timeline .step {
 margin-bottom: 15px;
 padding-left: 10px;
@@ -124,42 +150,92 @@ color: #3b82f6;
 font-weight: bold;
 }
 
+/* ===================== */
 /* RESPONSIVE */
+/* ===================== */
+
 @media (max-width: 768px) {
 .nav {
 flex-direction: column;
 gap: 10px;
 }
 }
-/* VEILLE */
+
+/* ===================== */
+/* VEILLE TECHNO - NEXT LEVEL */
+/* ===================== */
+
 .veille-intro {
 opacity: 0.7;
 margin-bottom: 20px;
+text-align: center;
 }
 
 /* FILTRES */
 .filters {
-margin-bottom: 20px;
+display: flex;
+justify-content: center;
+gap: 10px;
+margin-bottom: 25px;
 }
 
 .filters button {
-margin-right: 10px;
 padding: 6px 12px;
 border: none;
 background: #1f2937;
 color: white;
 border-radius: 6px;
 cursor: pointer;
+transition: 0.3s;
 }
 
 .filters button:hover {
 background: #3b82f6;
 }
 
-/* ANALYSE */
+/* VEILLE CARD (style article pro) */
+.veille-card {
+background: #111827;
+padding: 20px;
+border-radius: 14px;
+margin-bottom: 20px;
+border: 1px solid rgba(59,130,246,0.15);
+transition: 0.3s;
+}
+
+.veille-card:hover {
+transform: translateY(-6px);
+border-color: #3b82f6;
+box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* HEADER VEILLE */
+.veille-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 10px;
+}
+
+/* DATE */
+.date {
+color: #3b82f6;
+font-weight: bold;
+font-size: 14px;
+}
+
+/* TAG */
+.tag {
+background: #3b82f6;
+padding: 3px 10px;
+border-radius: 20px;
+font-size: 12px;
+}
+
+/* ANALYSE (si tu veux ajouter après) */
 .analyse {
 margin-top: 10px;
 font-size: 14px;
 opacity: 0.8;
-color: #3b82f6;
+color: #93c5fd;
 }
