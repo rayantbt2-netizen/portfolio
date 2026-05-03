@@ -1,24 +1,29 @@
-<script>
+// =======================
+// ANIMATION TEXTE HERO
+// =======================
 
-// animation texte
 const text = "Bienvenue sur mon portfolio";
 const title = document.getElementById("title");
 
 let i = 0;
 
 function type() {
-  if (i < text.length) {
+  if (title && i < text.length) {
     title.innerHTML += text[i];
     i++;
     setTimeout(type, 60);
   }
 }
 
-type(); // IMPORTANT pour lancer
+type();
 
-// filtre veille
+
+// =======================
+// FILTRE VEILLE TECHNO
+// =======================
+
 function filterSelection(category) {
-  const items = document.querySelectorAll(".veille-item");
+  const items = document.querySelectorAll(".veille-card");
 
   items.forEach(item => {
     if (category === "all") {
@@ -32,5 +37,3 @@ function filterSelection(category) {
     }
   });
 }
-
-</script>
