@@ -239,3 +239,33 @@ font-size: 14px;
 opacity: 0.8;
 color: #93c5fd;
 }
+
+
+.contact-links {
+display: flex;
+gap: 15px;
+flex-wrap: wrap;
+margin-top: 20px;
+}
+
+.contact-links a {
+display: flex;
+align-items: center;
+gap: 8px;
+padding: 10px 14px;
+background: #111827;
+border-radius: 10px;
+color: white;
+text-decoration: none;
+transition: 0.3s;
+}
+
+.contact-links a i {
+font-size: 18px;
+color: #3b82f6;
+}
+
+.contact-links a:hover {
+background: #1f2937;
+transform: translateY(-3px);
+}
