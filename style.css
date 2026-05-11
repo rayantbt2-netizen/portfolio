@@ -19,7 +19,6 @@ justify-content: space-between;
 align-items: center;
 background: #0f172a;
 z-index: 1000;
-backdrop-filter: blur(10px);
 }
 
 .logo-wrapper {
@@ -72,7 +71,6 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 text-align: center;
-padding: 20px;
 }
 
 .avatar {
@@ -80,19 +78,16 @@ width: 160px;
 border-radius: 50%;
 border: 4px solid #3b82f6;
 box-shadow: 0 0 25px rgba(59,130,246,0.4);
-margin-bottom: 20px;
 }
 
 h1 {
 font-size: 42px;
-margin-bottom: 10px;
+margin-top: 20px;
 }
 
 .subtitle {
 opacity: 0.7;
-font-size: 16px;
-max-width: 600px;
-line-height: 1.6;
+margin-top: 10px;
 }
 
 /* ===================== */
@@ -102,39 +97,42 @@ line-height: 1.6;
 .hero-links {
 display: flex;
 justify-content: center;
-gap: 15px;
-margin-top: 20px;
+gap: 20px;
+margin-top: 25px;
 flex-wrap: wrap;
 }
 
 .hero-item {
 display: flex;
 align-items: center;
-gap: 10px;
-padding: 10px 16px;
+gap: 12px;
+padding: 12px 18px;
 background: #111827;
-border-radius: 12px;
-border: 1px solid rgba(59,130,246,0.15);
+border-radius: 14px;
+border: 1px solid rgba(59,130,246,0.2);
 text-decoration: none;
 color: white;
 transition: 0.3s;
+font-weight: 600;
 }
 
 .hero-item:hover {
-transform: translateY(-4px);
-border-color: #3b82f6;
+transform: translateY(-5px);
 background: #1f2937;
-box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+border-color: #3b82f6;
+box-shadow: 0 10px 25px rgba(0,0,0,0.35);
 }
 
 .hero-item img {
-width: 22px;
-height: 22px;
+width: 24px;
+height: 24px;
 }
 
 .hero-item span {
-font-size: 14px;
-font-weight: 500;
+font-size: 15px;
+font-weight: 700;
+color: #3b82f6;
+letter-spacing: 0.3px;
 }
 
 /* ===================== */
@@ -147,12 +145,6 @@ max-width: 1100px;
 margin: auto;
 }
 
-.section h2 {
-font-size: 32px;
-margin-bottom: 25px;
-color: #3b82f6;
-}
-
 /* ===================== */
 /* CARDS */
 /* ===================== */
@@ -162,13 +154,10 @@ background: #111827;
 padding: 20px;
 border-radius: 12px;
 transition: 0.3s;
-border: 1px solid rgba(59,130,246,0.1);
 }
 
 .card:hover {
 transform: translateY(-5px);
-box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-border-color: #3b82f6;
 }
 
 /* ===================== */
@@ -205,8 +194,8 @@ background: #2563eb;
 /* ===================== */
 
 .timeline .step {
-margin-bottom: 20px;
-padding-left: 15px;
+margin-bottom: 15px;
+padding-left: 10px;
 border-left: 3px solid #3b82f6;
 }
 
@@ -224,15 +213,6 @@ font-weight: bold;
 .nav {
 flex-direction: column;
 gap: 10px;
-padding: 15px;
-}
-
-.hero {
-padding-top: 120px;
-}
-
-h1 {
-font-size: 32px;
 }
 
 .hero-links {
@@ -255,7 +235,6 @@ align-items: center;
 opacity: 0.7;
 margin-bottom: 20px;
 text-align: center;
-line-height: 1.7;
 }
 
 .veille-card {
@@ -276,15 +255,8 @@ box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 .analyse {
 margin-top: 10px;
 font-size: 14px;
-opacity: 0.9;
+opacity: 0.8;
 color: #93c5fd;
-line-height: 1.7;
-}
-
-.tags {
-margin-top: 15px;
-font-size: 13px;
-color: #3b82f6;
 }
 
 /* ===================== */
@@ -338,11 +310,11 @@ height: 22px;
 /* ===================== */
 
 .contact-form {
-max-width: 550px;
-margin: 30px auto;
+max-width: 500px;
+margin: 20px auto;
 display: flex;
 flex-direction: column;
-gap: 12px;
+gap: 10px;
 text-align: left;
 }
 
@@ -353,43 +325,32 @@ opacity: 0.8;
 
 .contact-form input,
 .contact-form textarea {
-padding: 12px;
-border-radius: 10px;
+padding: 10px;
+border-radius: 8px;
 border: none;
 outline: none;
 background: #0f172a;
 color: white;
 border: 1px solid rgba(59,130,246,0.2);
-font-family: 'Poppins', sans-serif;
-transition: 0.3s;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-border-color: #3b82f6;
-box-shadow: 0 0 10px rgba(59,130,246,0.2);
 }
 
 .contact-form textarea {
-min-height: 140px;
+min-height: 120px;
 resize: none;
 }
 
 .contact-form button {
 margin-top: 10px;
-padding: 12px;
+padding: 10px;
 border: none;
-border-radius: 10px;
+border-radius: 8px;
 background: #3b82f6;
 color: white;
 cursor: pointer;
-font-weight: 500;
 transition: 0.3s;
 }
 
 .contact-form button:hover {
 background: #2563eb;
-transform: scale(1.02);
+transform: scale(1.03);
 }
-
-
